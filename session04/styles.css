@@ -1,0 +1,316 @@
+body {
+  background-color: rgb(1, 0, 0);
+  background-image: url(images/100.jpg);
+  background-attachment: fixed;
+  margin: 0px;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a:visited {
+  color:#fdfeff; /* or any color you want */
+}
+
+
+
+nav {
+  background-color: #BF5471;
+  padding: 15px;
+  text-align: center;
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.nav-button {
+  display: inline-block;
+  background-color: #F288A4;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+#wrapper {
+  width: 70%;
+  background-color: #D97386;
+  margin: 40px auto;
+  padding: 20px 100px;
+}
+
+span.wow {
+  color: rgb(19, 194, 68);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+header h1 {
+  font-family: "Bungee Shade", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+header h2 {
+  font-family: "Bitcount Ink", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main p.types {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+
+
+/* This styles index */
+body.index {
+  background-image: url(images/indexpic.jpg);
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+}
+body.index h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  color:#00ffff;
+
+
+}
+
+
+body.index h1 {
+  font-family: "Bungee Shade", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body.index p {
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#box {
+  width: 70%;
+  background-color: #D97386;
+  margin: 40px auto;
+  padding: 20px 100px;
+}
+
+
+span.colors {
+  color: #00ffff;
+}
+
+span.red {
+  color: #00ffff;
+  background-color: rgb(255, 27, 27);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+body.index h2 {
+  font-family: "Bungee Shade", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#000;
+
+  
+}
+
+
+body.index {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal
+}
+
+span.mushroom {
+   color: #000;
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: normal;
+   background-color: #00B2FF;
+  display: inline;
+  padding: 0 5px;
+    border-radius: 10px;
+}
+
+.heading {
+  color: #000;
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+span.text {
+  color:#00ffff;
+  
+}
+
+
+.learnbox {
+  border: 2px solid #333;
+  padding: 15px;
+  margin: 30px 0;
+  background-color: #F47DEE;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* The end of index*/
+
+
+
+
+/* This styles types */
+
+main table {
+  background-color: #F25C78;
+  text-align: center;
+  border-collapse: separate;
+  border-radius: 10px;
+  border-collapse: collapse;
+
+}
+
+body.types h2 {
+  font-family: "Bungee Shade", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+span.typehead {
+  font-family: "Ultra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+span.explore {
+  color:#00ffff;
+}
+
+
+main table th {
+  background-color: #D9435F;
+}
+
+main table td,
+main table th {
+  padding: 5px;
+  border: 1px solid #000;
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main table tbody tr:hover {
+  background-color: #f88c9f;
+  cursor: pointer;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 4px solid #000;
+}
+
+/* The end of types */
+
+
+
+
+/* This styles featured */
+
+body.featured {
+  background-image: url(images/dirt.jpg);
+}
+
+#container {
+  width: 70%;
+  background-color: #D97386;
+  margin: 40px auto;
+  padding: 20px 100px;
+}
+
+h2.heading2 {
+  font-family: "Fascinate", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #F03226;
+  text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+}
+
+
+body.featured h1 {
+  font-family: "Fascinate", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow:
+    -1px -1px 0 #FFFFFF,
+    1px -1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+    1px 1px 0 #FFFFFF;
+}
+
+body.featured p {
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+
+}
+
+body.featured img {
+  box-shadow: 0 0 10px 5px #000000;
+  transition: box-shadow 0.4s ease;
+  margin: 5px;
+
+}
+
+span.footer {
+  font-family: "Ultra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+span.foot {
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+/* The end of featured */
+
+

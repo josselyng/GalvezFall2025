@@ -1,0 +1,156 @@
+body {
+    background-color: #000;
+    background-image: url("images/moss04.jpg");
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    /* background-position-y: bottom;  */
+
+    margin: 0;
+    padding: 0;
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    /* 200 – 800 */
+    font-style: normal;
+
+}
+
+/* id rule uses hashtag #, only one per page */
+#wrapper {
+    margin: 100px auto;
+    width: 60%;
+    background-color: #fff;
+    padding: 30px 50px;
+    /* background-image: url("images/moss03.jpg"); */
+}
+
+/* class rules use a period to make a rule about a class, use multiple times */
+.wow {
+    color: #f00;
+    font-weight: 900;
+    font-style: italic;
+}
+
+header h1 {
+
+    font-family: "Bitcount Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    /* 100-900 */
+    font-style: normal;
+    font-variant: small-caps;
+    font-size: 66px;
+}
+
+main p {
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+main h2 {
+    border: #DB029E dotted 1px;
+    background-color: #DE68A3;
+    padding: 120px 10px 10px 10px;
+    margin: 40px 0px;
+    font-size: 44px
+}
+
+
+main div.featuredImageOne {
+    border: solid #DB029E 10px;
+    background-color: #B602DB;
+    padding: 60px;
+    margin: 100px auto;
+    width: 400px;
+    text-align: center;
+
+}
+
+main div.featuredImageOne img {
+
+    width: 100%;
+
+
+
+}
+
+table,
+th,
+td,
+tr {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+main table {
+    border: 10px solid rgb(192, 192, 192);
+    background-color: rgb(255, 207, 74);
+
+}
+
+main table th {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(155, 155, 155);
+    font-family: "Bitcount Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    /* 100-900 */
+    font-style: normal;
+    font-variant: small-caps;
+    font-size: 33px;
+    padding: 22px;
+
+}
+
+main table td {
+    border: 5px solid rgb(77, 77, 77);
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+nav {
+    background-color: #DE68A3;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+
+nav a {
+    font-size: 33px;
+    border: rgb(138, 52, 96) solid 5px;
+    background-color: #7f378e;
+    padding: 22px;
+    margin: 20px;
+    color: #0c0c0c;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 900;
+}
+
+nav a:hover {
+    background-color: aqua;
+}
+
+
+/* 2nd div */
+
+main div.featuredImageTwo {
+    border: dotted #7602DB 10px;
+    background-color: #2F02DB;
+    padding: 90px;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+main div.featuredImageTwo img {
+    width: 80%;
+    filter: grayscale(70%);
+    border-radius: 10px;
+
+}

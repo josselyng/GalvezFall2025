@@ -1,0 +1,182 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+
+body {
+    background-color: #FEDBBE;
+    padding:0px;
+    margin: 0px;
+    background-image: url(images/forest.jpg);
+    background-attachment: fixed;
+}
+
+#wrapper {
+
+    max-width: 1200px;
+    background-color: #FDDEDC;
+    border: solid #0c0c0c 5px;
+       /* center the wrapper */
+    margin:10px auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/* add padding to all of the #wrapper child elements, *symbol looks for first child inside the selector*/
+#wrapper>* {
+    padding: 20px;
+}
+
+header {
+
+    background-color: #BF5560;
+    order: 1;
+    flex: 1 1 100%;
+       opacity: 0.8;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+
+main {
+background-color:#FEDBBE;
+order:3;
+flex: 2 1 0;
+}
+/* images */
+.images {
+text-align:center;
+border: 8px solid #BB4C5C;
+text-align:center;
+margin: 50px;
+}
+
+
+
+
+/* view sub button */
+main div.buttonAbsolute {
+    background-color:#E39E8A;
+    color: black;
+    text-align: center;
+    width: 120px;
+    opacity: 1.0;
+    padding: 15px;
+border-radius: 125px;
+ font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+
+/* sticky button */
+
+position: absolute;
+top: 10px;
+right:10px;
+z-index: 2;
+
+}
+
+/* view gallery button */
+
+main div.buttonRelative {
+background-color:#E39E8A;
+width:200px;
+padding:10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+    left: 0px;
+    z-index: 3;
+     font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+
+
+nav {
+    background-color:#C66754;
+    order: 2;
+    flex: 1 1 200px;
+}
+
+nav li {
+    font-size: 20px;
+    border: #BF5560 solid 5px;
+    background-color: #E39E8A;
+    padding: 8px 16px;
+    margin: 15px;
+    color: black;
+    text-decoration: none;
+    border-radius: 12px;
+    text-align: center;
+
+}
+
+nav li:hover {
+    background-color:#3B54E3;
+}
+
+aside {
+    background-color: #E06E5B;
+    order: 4;
+    flex: 1 1 200px;
+}
+
+footer {
+    background-color:#BB4C5C ;
+    order: 5;
+    flex: 1 0 100%;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h1, h2, h3 {
+      font-family: "Train One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p, nav, aside {
+    font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p {
+    font-size: 14px;
+}
+
+aside table {
+    border: 1px solid black;
+    background-color: #E39E8A;
+}
+
+aside th  {
+    background-color:#BB4C5C;
+border: 2px solid black;
+padding: 5px;
+margin: 10px;
+}
+
+aside td {
+    border: 2px solid black;
+    padding: 5px;
+margin: 10px;
+}

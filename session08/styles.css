@@ -1,0 +1,125 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  /* remove margin and padding on body */
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  background-image: url(leaf.jpg);
+}
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+   font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+  background: white;
+  /* grid layout parent */
+  display: grid;
+  /* create 12 col layout */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 20px;
+}
+
+header {
+  background: #E60069;
+  /* span all 12 cols*/
+    grid-row: 1;
+  grid-column: 1 / 13;
+}
+
+nav {
+  background: #E581CC;
+  grid-column: 1 / 13;
+  grid-row: 2;
+  text-align: center;
+
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  border: solid 2px #cc7099;
+  background-color: #E60069;
+    padding: 8px;
+    margin: 20px;
+  text-align: center;
+   font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+
+nav a:hover {
+  background: #53dc88;
+}
+
+
+main {
+  background: #E6B3C9;
+  grid-row:3;
+  grid-column: 1 / 11;
+  
+}
+
+
+aside {
+  background: #E66EA0;
+  grid-column: 11/ 13;
+  grid-row: 3;
+}
+
+.extra {
+background:#FA66AA;
+grid-column:1/6;
+grid-row: 4/5;
+
+}
+
+.extra2 {
+  background:#e383b0;
+  grid-column: 6/13;
+  grid-row: 4/5;
+  text-align: center;
+}
+
+p {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+}
+
+footer {
+  background:#E60069;
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+    
+}

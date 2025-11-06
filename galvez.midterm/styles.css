@@ -1,0 +1,250 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+
+body {
+    background-color:white;
+    padding: 0px;
+    margin:0px;
+}
+
+
+#wrapper {
+  
+   display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+    width: 80%;
+    background-color: #6768F5;
+    margin: 40px auto;
+ 
+  
+
+}
+
+
+
+header {
+    background-color:#E59400;
+    padding: 20px;
+    grid-row: 1;
+    grid-column: 1/13;
+
+   
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+
+
+h1, h2, h3, th {  
+  font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+    background-color: #133ECC;
+    padding: 24px;
+      grid-row: 2/3;
+    grid-column: 1/11;
+}
+
+aside {
+  grid-column: 11 / 13;
+  grid-row: 2;
+  background-color: #EBF0EC;
+  padding: 20px;
+
+
+}
+
+aside nav a {
+  color:#000000;
+  text-decoration: none;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  background-color: #ffcf4a;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: bold; 
+}
+
+aside nav a:hover {
+    background-color: #133ECC;
+}
+
+.headings {
+  color: #FFFFFF;
+
+}
+
+
+.changefont {
+   font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  font-weight: 800;
+   
+}
+
+
+
+
+a {
+  color: #FFFFFF;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+color: #FFFFFF;
+
+}
+
+
+.second {
+  background-color:#efa825;
+    grid-row: 4;
+    grid-column: 1/13;
+    padding: 10px;
+    text-align:center;
+
+   
+}
+
+p {  
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+color: #FFFFFF;
+}
+
+
+.blackfont {
+  color: black;
+}
+
+
+
+
+.bold {
+  font-weight: bold;
+}
+
+footer {
+  
+    background-color:#E59400;
+    padding: 20px;
+     grid-row: 5;
+    grid-column: 1/13;
+    
+}
+
+/** styles types */
+
+table {
+   border-collapse: collapse;
+  border: 4px solid #000000;
+ background-color:#EBF0EC;
+    /* background-color: #ffcf4a; */
+    margin:0 auto;
+    
+}
+
+table tr:hover 
+{
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+
+
+
+th, td {
+  border: 3px solid #000000;
+  padding: 10px;
+
+}
+
+th {
+    background-color: #133ECC; ;
+    font-size: 20px;
+    padding: 15px;
+  
+}
+
+
+.tableheading {
+  color:#FFFFFF;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 2px;
+
+
+}
+
+td {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.sunscreenanimation {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+
+
+.center {
+  color:#FFFFFF;
+  text-align: center;
+}
+
+
+
+.sunscreenanimation img {
+animation-name: bottlesmoving;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes bottlesmoving {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1) }
+}
+
+
+.sunscreenanimation img:hover {
+  animation-play-state: paused;
+}

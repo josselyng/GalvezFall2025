@@ -1,0 +1,521 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+
+body {
+    background-color:white;
+    padding: 0px;
+    margin:0px;
+}
+
+
+#wrapper {
+  
+   display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+    width: 80%;
+    background-color: #6768F5;
+    margin: 40px auto;
+ 
+}
+
+header {
+    background-color:#E59400;
+    padding: 20px;
+    grid-row: 1;
+    grid-column: 1/13;
+
+   
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+
+
+h1, h2, h3, th {  
+  font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+/** for dark mode **/
+
+.toggle {
+
+  color:#000000;
+  text-decoration: none;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  background-color: #ffcf4a;
+  font-family: "Nunito Sans", sans-serif;
+  text-align:center;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: bold; 
+}
+
+.toggle:hover  {
+   background-color: #133ECC;
+
+
+}
+
+body.dark {
+  background-color: #665f5f;
+  color: #d6d6d6;
+}
+
+
+body.dark #wrapper {
+    background-color: #8C8C8C;
+      color: #000000
+}
+
+
+
+
+body.dark header {
+  background-color: #c79538;
+
+}
+
+
+body.dark main{
+  background-color: #0D2A8C;
+  color: #d6d6d6;
+
+}
+
+body.dark .second {
+  background-color: #9E6F18;
+
+}
+
+
+body.dark .second p {
+ color: #d6d6d6;
+
+}
+
+body.dark .second h3 {
+ color: #d6d6d6;
+}
+
+
+body.dark aside {
+    background-color: #898C8A;
+}
+
+body.dark nav a {
+  background-color: #c79538;
+
+}
+body.dark .toggle {
+  background-color: #c79538;
+ 
+  
+}
+
+body.dark nav a:hover {
+  background-color: #0D2A8C;
+}
+
+
+body.dark .toggle:hover {
+  background-color: #0D2A8C;
+}
+
+
+
+body.dark footer {
+  background-color: #898C8A;
+  color: #d6d6d6;
+}
+
+
+body.dark font {
+ color: #d6d6d6;
+} 
+
+
+body.dark p {
+ color: #d6d6d6;
+}
+
+body.dark h3 {
+    color: #d6d6d6;
+}
+
+
+
+/** main parts for dark mode ends **/
+
+main {
+    background-color: #133ECC;
+    padding: 24px;
+      grid-row: 2/3;
+    grid-column: 1/11;
+}
+
+aside {
+  grid-column: 11 / 13;
+  grid-row: 2;
+  background-color: #EBF0EC;
+  padding: 20px;
+
+
+}
+
+aside nav a {
+  color:#000000;
+  text-decoration: none;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  background-color: #ffcf4a;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: bold; 
+}
+
+aside nav a:hover {
+    background-color: #133ECC;
+}
+
+
+.headings {
+  color: #FFFFFF;
+
+}
+
+body.dark .tablesection h2 {
+  color: #d6d6d6;
+}
+
+
+
+.changefont {
+   font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  font-weight: 800;
+   
+}
+
+
+a {
+  color: #FFFFFF;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+color: #FFFFFF;
+
+}
+
+
+
+.animationsection {
+  background-color: #efa825;
+    padding: 24px;
+      grid-row: 3;
+    grid-column: 1/13;
+}
+
+
+body.dark .animationsection {
+  background-color:#9E6F18;
+  
+
+}
+body.dark .animationsection h2 {
+color: #d6d6d6
+}
+
+
+.second {
+  background-color:#efa825;
+    grid-row: 4;
+    grid-column: 1/13;
+    padding: 10px;
+    text-align:center;
+}
+
+
+/* jquery dropdown */
+
+#flip {
+  padding: 5px;
+  text-align: center;
+   border: solid 1px #0000;
+  background-color:  #284fd0;
+  grid-column: 1/13;
+  grid-row: 5;
+
+  font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+  padding: 5px;
+  
+  border: solid 1px #0000;
+  background-color:  #284fd0;
+  grid-column: 1/13;
+  grid-row: 6;
+
+ font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+color:#FFFFFF;
+  text-align: center;
+   
+}
+
+body.dark #panel {
+  background-color: #1B358C;
+  color: #d6d6d6;
+  text-align: center;
+}
+
+
+body.dark #flip {
+  background-color: #1B358C;
+  color: #d6d6d6;
+}
+
+/* uv index interaction*/
+
+#uvsection {
+  grid-column: 1 / 13;
+  background-color: #E59400;
+  padding: 32px;
+  text-align: center;
+}
+
+body.dark #uvsection {
+background-color: #9E6700;
+}
+
+
+
+#uvbutton {
+  color:#000000;
+  text-decoration: none;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  background-color: #ffcf4a;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: bold; 
+}
+
+body.dark #uvbutton {
+  background-color: #c79538;
+}
+
+
+#uvbutton:hover {
+    background-color: #133ECC;
+}
+
+
+body.dark #uvbutton:hover {
+    background-color: #0D2A8C;
+}
+
+#UVtext {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {  
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+color: #FFFFFF;
+}
+
+
+.blackfont {
+  color: #000000;
+}
+
+
+
+.bold {
+  font-weight: bold;
+}
+
+footer {
+  
+    background-color:#EBF0EC;
+    padding: 20px;
+     grid-row: 7;
+    grid-column: 1/13;
+    
+    
+}
+
+
+a:link, a:visited {
+  color:#000000;
+}
+
+/* table */
+
+.tablesection {
+ background-color: #133ECC;
+ grid-column: 1/13;
+ text-align: center;
+ 
+}
+
+body.dark .tablesection {
+ background-color: #0D2A8C;
+ text-align: center;
+}
+
+
+
+table {
+   border-collapse: collapse;
+  border: 4px solid #000000;
+ background-color:#EBF0EC;
+  
+    margin:0 auto;
+    
+}
+
+
+body.dark table {
+  background-color: #9da19e ;
+}
+
+table tr:hover 
+{
+  background-color: #ffffffcf;
+  cursor: pointer;
+}
+
+body.dark table tr:hover {
+  background-color: #bcbaba;
+}
+
+
+th, td {
+  border: 3px solid #000000;
+  padding: 10px;
+
+}
+
+th {
+    background-color: #d9b34a ;
+    font-size: 20px;
+    padding: 15px;
+  
+}
+
+
+body.dark th {
+  background-color: #af8942;
+  
+}
+
+
+
+
+
+.tableheading {
+  
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 2px;
+
+
+}
+
+td {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.sunscreenanimation {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+
+
+.center {
+  color:#000000;
+  text-align: center;
+}
+
+
+.sunscreenanimation img {
+animation-name: bottlesmoving;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+
+}
+
+body.dark img {
+  filter: brightness(0.8);
+}
+
+
+@keyframes bottlesmoving {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1) }
+}
+
+
+.sunscreenanimation img:hover {
+  animation-play-state: paused;
+}
